@@ -1,0 +1,151 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-style: normal;
+  src: url('http://fonts.gstatic.com/s/roboto/v16/5YB-ifwqHP20Yn46l_BDhA.eot');
+  src: url('http://fonts.gstatic.com/s/roboto/v16/5YB-ifwqHP20Yn46l_BDhA.eot?#iefix') format('embedded-opentype'),
+        local('Roboto'),
+        local('Roboto-regular'),
+        url('http://fonts.gstatic.com/s/roboto/v16/oMMgfZMQthOryQo9n22dcuvvDin1pK8aKteLpeZ5c0A.woff2') format('woff2'),
+        url('http://fonts.gstatic.com/s/roboto/v16/CrYjSnGjrRCn0pd9VQsnFOvvDin1pK8aKteLpeZ5c0A.woff') format('woff'),
+        url('http://fonts.gstatic.com/s/roboto/v16/zN7GBFwfMP4uA6AR0HCoLQ.ttf') format('truetype'),
+        url('http://fonts.gstatic.com/l/font?kit=_YZOZaQ9UBZzaxiLBLcgZg&skey=a0a0114a1dcab3ac&v=v16#Roboto') format('svg');
+}
+
+@font-face {
+  font-family: 'Merriweather';
+  font-weight: 400;
+  font-style: normal;
+  src: url('http://fonts.gstatic.com/s/merriweather/v15/RFda8w1V0eDZheqfcyQ4EHZ2MAKAc2x4R1uOSeegc5U.eot');
+  src: url('http://fonts.gstatic.com/s/merriweather/v15/RFda8w1V0eDZheqfcyQ4EHZ2MAKAc2x4R1uOSeegc5U.eot?#iefix') format('embedded-opentype'),
+        local('Merriweather'),
+        local('Merriweather-regular'),
+        url('http://fonts.gstatic.com/s/merriweather/v15/RFda8w1V0eDZheqfcyQ4EBampu5_7CjHW5spxoeN3Vs.woff2') format('woff2'),
+        url('http://fonts.gstatic.com/s/merriweather/v15/RFda8w1V0eDZheqfcyQ4EKRDOzjiPcYnFooOUGCOsRk.woff') format('woff'),
+        url('http://fonts.gstatic.com/s/merriweather/v15/RFda8w1V0eDZheqfcyQ4EInF5uFdDttMLvmWuJdhhgs.ttf') format('truetype'),
+        url('http://fonts.gstatic.com/l/font?kit=RFda8w1V0eDZheqfcyQ4EFlIn5tFQcqMuf-jhyJP0ps&skey=379c1eccf863c625&v=v15#Merriweather') format('svg');
+}
+
+body{
+  color: #131511;
+  background-image: url("../images/background-2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+nav{
+  display: flex;
+  background-color: #FFFFFF;
+  justify-content: center;
+  position: fixed;
+  width:100vw;
+  box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
+}
+
+.nav_icon{
+  margin: 15px auto 15px 20px;
+  height: 50px;
+  width: 50px;
+}
+
+#nav_row{
+  margin-right: auto;
+  display: flex;
+  list-style: none;
+  padding: 31px;
+}
+
+#nav_row li{
+  margin: 0px 15px;
+}
+
+.nav-item{
+  font-family: Roboto, sans-serif;
+  padding: 10px;
+  text-transform: uppercase;
+  transition-duration: .5s;
+  color: #2B2F26;
+}
+
+.nav-item:hover {
+  color: #CD5D67;
+  transition-duration: .5s;
+}
+
+.nav-item:active{
+  text-decoration: none;
+  color:#968772;
+}
+
+.current_tab{
+  color:#968772;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 25vw;
+  padding: 20px;
+  margin-top: 35vh;
+  background-color: #F2F1E8;
+}
+
+form p{
+  font-family: Roboto, sans-serif;
+  margin: 5px;
+  text-align: center;
+}
+
+form p:first-child{
+  font-size: 1.4em;
+}
+
+#form_container{
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+}
+
+#nameInput, #emailInput{
+  border-bottom: 2px solid #968772;
+  padding-bottom: 2px;
+  margin: 10px;
+  width: 100%;
+  min-height: 30px;
+}
+
+#nameInput:focus, #emailInput:focus{
+  border-bottom: 2px solid #967343;
+}
+
+#signupButton{
+  background-color: #968772;
+  color: #F2F1E8;
+  padding: 10px;
+  font-weight: lighter;
+  width: 75px;
+  cursor: pointer;
+}
+
+#signupButton:hover{
+  color: #FFFFFF;
+  background-color: #967343;
+  transition-duration: .5s;
+}
+

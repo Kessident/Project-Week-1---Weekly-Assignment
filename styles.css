@@ -1,0 +1,205 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-style: normal;
+    src: url('http://fonts.gstatic.com/s/roboto/v16/5YB-ifwqHP20Yn46l_BDhA.eot');
+    src: url('http://fonts.gstatic.com/s/roboto/v16/5YB-ifwqHP20Yn46l_BDhA.eot?#iefix') format('embedded-opentype'),
+        local('Roboto'),
+        local('Roboto-regular'),
+        url('http://fonts.gstatic.com/s/roboto/v16/oMMgfZMQthOryQo9n22dcuvvDin1pK8aKteLpeZ5c0A.woff2') format('woff2'),
+        url('http://fonts.gstatic.com/s/roboto/v16/CrYjSnGjrRCn0pd9VQsnFOvvDin1pK8aKteLpeZ5c0A.woff') format('woff'),
+        url('http://fonts.gstatic.com/s/roboto/v16/zN7GBFwfMP4uA6AR0HCoLQ.ttf') format('truetype'),
+        url('http://fonts.gstatic.com/l/font?kit=_YZOZaQ9UBZzaxiLBLcgZg&skey=a0a0114a1dcab3ac&v=v16#Roboto') format('svg');
+}
+
+@font-face {
+    font-family: 'Merriweather';
+    font-weight: 400;
+    font-style: normal;
+    src: url('http://fonts.gstatic.com/s/merriweather/v15/RFda8w1V0eDZheqfcyQ4EHZ2MAKAc2x4R1uOSeegc5U.eot');
+    src: url('http://fonts.gstatic.com/s/merriweather/v15/RFda8w1V0eDZheqfcyQ4EHZ2MAKAc2x4R1uOSeegc5U.eot?#iefix') format('embedded-opentype'),
+        local('Merriweather'),
+        local('Merriweather-regular'),
+        url('http://fonts.gstatic.com/s/merriweather/v15/RFda8w1V0eDZheqfcyQ4EBampu5_7CjHW5spxoeN3Vs.woff2') format('woff2'),
+        url('http://fonts.gstatic.com/s/merriweather/v15/RFda8w1V0eDZheqfcyQ4EKRDOzjiPcYnFooOUGCOsRk.woff') format('woff'),
+        url('http://fonts.gstatic.com/s/merriweather/v15/RFda8w1V0eDZheqfcyQ4EInF5uFdDttMLvmWuJdhhgs.ttf') format('truetype'),
+        url('http://fonts.gstatic.com/l/font?kit=RFda8w1V0eDZheqfcyQ4EFlIn5tFQcqMuf-jhyJP0ps&skey=379c1eccf863c625&v=v15#Merriweather') format('svg');
+}
+
+body{
+    background-color: #F2F1E8;
+    font-family: Merriweather, sans-serif;
+}
+
+.body_container{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-between;
+}
+
+nav{
+    position: static;
+    display: flex;
+    background-color: #FFFFFF;
+    justify-content: center;
+    position: fixed;
+    width:100vw;
+}
+
+.nav_container{
+    height: 80px;
+    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
+}
+
+.nav_icon{
+    margin: 15px auto 15px 20px;
+    height: 50px;
+    width: 50px;
+}
+
+#nav_row{
+    margin-right: auto;
+    display: flex;
+    list-style: none;
+    padding: 30px;
+}
+
+#nav_row li{
+    margin: 0px 15px;
+}
+
+.nav-item {
+    font-family: Roboto, sans-serif;
+    padding: 10px;
+    text-transform: uppercase;
+    transition-duration: .5s;
+    color: #2B2F26;
+}
+
+.nav-item:hover{
+    color: #CD5D67;
+    transition-duration: .5s;
+}
+
+.nav-item:active{
+    text-decoration: none;
+    color:#968772;
+}
+
+.current_tab{
+    color:#968772;
+}
+
+.page_header{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 25px;
+}
+
+.page_header h1{
+    margin: 10px;
+    font-size: 3em;
+}
+
+.page_header h3{
+    margin: 10px;
+    font-size: 2em;
+    font-weight: lighter;
+}
+
+#products{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.product_pics{
+    width: 18%;
+    margin: 10px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.top_row{
+    height: 300px;
+}
+
+.bot_row{
+    height: 200px;
+}
+
+.product_pics:nth-child(1){
+    background-image: url("images/product-1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 54%;
+}
+
+.product_pics:nth-child(2){
+    background-image: url("images/product-2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.product_pics:nth-child(3){
+    background-image: url("images/product-3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.product_pics:nth-child(4){
+    background-image: url("images/product-4.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.product_pics:nth-child(5){
+    background-image: url("images/product-5.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.product_pics:nth-child(6){
+    background-image: url("images/product-6.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 35%;
+}
+
+.product_pics:nth-child(7){
+    background-image: url("images/product-7.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.product_caption{
+    display:inline-block;
+    color: #F2F1E8;
+    background-color: #2C2F26;
+    width: auto;
+    margin-bottom: 10px;
+    padding: 13px;
+}
+
+footer{
+    width: 100%;
+    color: #F2F1E8;
+    background-color: #2C2F26;
+    padding: 30px;
+}

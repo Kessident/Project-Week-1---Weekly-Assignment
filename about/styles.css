@@ -1,0 +1,216 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-style: normal;
+    src: url('http://fonts.gstatic.com/s/roboto/v16/5YB-ifwqHP20Yn46l_BDhA.eot');
+    src: url('http://fonts.gstatic.com/s/roboto/v16/5YB-ifwqHP20Yn46l_BDhA.eot?#iefix') format('embedded-opentype'),
+        local('Roboto'),
+        local('Roboto-regular'),
+        url('http://fonts.gstatic.com/s/roboto/v16/oMMgfZMQthOryQo9n22dcuvvDin1pK8aKteLpeZ5c0A.woff2') format('woff2'),
+        url('http://fonts.gstatic.com/s/roboto/v16/CrYjSnGjrRCn0pd9VQsnFOvvDin1pK8aKteLpeZ5c0A.woff') format('woff'),
+        url('http://fonts.gstatic.com/s/roboto/v16/zN7GBFwfMP4uA6AR0HCoLQ.ttf') format('truetype'),
+        url('http://fonts.gstatic.com/l/font?kit=_YZOZaQ9UBZzaxiLBLcgZg&skey=a0a0114a1dcab3ac&v=v16#Roboto') format('svg');
+}
+
+@font-face {
+    font-family: 'Merriweather';
+    font-weight: 400;
+    font-style: normal;
+    src: url('http://fonts.gstatic.com/s/merriweather/v15/RFda8w1V0eDZheqfcyQ4EHZ2MAKAc2x4R1uOSeegc5U.eot');
+    src: url('http://fonts.gstatic.com/s/merriweather/v15/RFda8w1V0eDZheqfcyQ4EHZ2MAKAc2x4R1uOSeegc5U.eot?#iefix') format('embedded-opentype'),
+        local('Merriweather'),
+        local('Merriweather-regular'),
+        url('http://fonts.gstatic.com/s/merriweather/v15/RFda8w1V0eDZheqfcyQ4EBampu5_7CjHW5spxoeN3Vs.woff2') format('woff2'),
+        url('http://fonts.gstatic.com/s/merriweather/v15/RFda8w1V0eDZheqfcyQ4EKRDOzjiPcYnFooOUGCOsRk.woff') format('woff'),
+        url('http://fonts.gstatic.com/s/merriweather/v15/RFda8w1V0eDZheqfcyQ4EInF5uFdDttMLvmWuJdhhgs.ttf') format('truetype'),
+        url('http://fonts.gstatic.com/l/font?kit=RFda8w1V0eDZheqfcyQ4EFlIn5tFQcqMuf-jhyJP0ps&skey=379c1eccf863c625&v=v15#Merriweather') format('svg');
+}
+
+body{
+    background-color: #F2F1E8;
+    font-family: Merriweather, sans-serif;
+}
+
+nav{
+    display: flex;
+    background-color: #FFFFFF;
+    justify-content: center;
+    position: fixed;
+    width:100vw;
+    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
+}
+
+.nav_container{
+    height: 80px;
+}
+
+.nav_icon{
+    margin: 15px auto 15px 20px;
+    height: 50px;
+    width: 50px;
+}
+
+#nav_row{
+    margin-right: auto;
+    display: flex;
+    list-style: none;
+    padding: 30px;
+}
+
+#nav_row li{
+    margin: 0px 15px;
+}
+
+.nav-item{
+    font-family: Roboto, sans-serif;
+    padding: 10px;
+    text-transform: uppercase;
+    transition-duration: .5s;
+    color: #2B2F26;
+}
+
+.nav-item:hover{
+    color: #CD5D67;
+    transition-duration: .5s;
+}
+
+.nav-item:active, .main_text a:active{
+    text-decoration: none;
+}
+
+.current_tab, .main_text a{
+    color:#968772;
+}
+
+.main_text a:hover{
+    color: #967343;
+}
+
+.content{
+    font-weight: bolder;
+    line-height: 200%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F2F1E8;
+}
+
+.content > h1{
+    font-size: 3em;
+    font-weight: lighter;
+    margin: 60px 0px 30px;
+}
+
+.above_image{
+    display: flex;
+    margin: 20px 12vw;
+}
+
+.main_text img{
+    margin: 0px 10px 10px 0px;
+    float: left;
+    height: 75px;
+    width: 100px;
+}
+
+.main_text blockquote{
+    font-weight: lighter;
+    margin: 20px 0px;
+    padding: 10px;
+    border-left: 3px solid #968772;
+}
+
+.parallax{
+    background:url("../images/background-3.jpg");
+    min-height: 200px;
+    min-width: 100%;
+    background-attachment: fixed;
+    background-position: center 25%;;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.room_to_grow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 3em;
+    width: 100%;
+    height: 250px;
+    margin-top: -220px;
+}
+
+
+#Facilities{
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.facilities{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 12vw;
+}
+
+.facilities_text{
+    display: flex;
+}
+
+.pottery_shelf{
+    margin-left: 20px;
+}
+
+.caption{
+    line-height: 170%;
+    font-size: .7em;
+    font-weight: lighter;
+}
+
+.monthly_plans{
+    margin-top: 50px;
+}
+
+.monthly_plans h2{
+    font-size: 1.3em;
+    margin-bottom: 10px;
+}
+
+.monthly_plans table{
+    border-collapse: collapse;
+    margin-bottom: 20px; 
+}
+
+.monthly_plans table tr:first-child{
+    text-align: center;
+}
+
+.monthly_plans table tr td{
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.monthly_plans table tr:nth-child(2n){
+    background-color: #F3EADB;
+}
+
+footer{
+    width: 100%;
+    color: #F2F1E8;
+    background-color: #2C2F26;
+    padding: 30px;
+}
